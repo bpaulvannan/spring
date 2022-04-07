@@ -37,8 +37,10 @@ services:
       - backend
 
   # My SQL Admin App
-  adminer_docker:
+  db-ui:
     image: adminer:4.8.0
+    depends_on:
+      - db
     environment:
       ADMINER_DEFAULT_SERVER: mysql
       ADMINER_DESIGN: galkaev

@@ -61,6 +61,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<!-- mvn flyway:info  -->
+				<!-- mvn flyway:migrate  -->
+				<!-- mvn flyway:repair  -->
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
 				<version>8.0.0</version>
